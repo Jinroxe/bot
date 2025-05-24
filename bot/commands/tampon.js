@@ -59,7 +59,7 @@ export default {
       .setTitle(config.embed_title)
       .setDescription(`${barre}\n**${tampons}/10 tampons**\n\n${config.embed_message}`)
       .setColor(config.embed_color)
-      .setAuthor({ name: interaction.user.displayName, iconURL: interaction.user.displayAvatarURL() })
+      .setAuthor({ name: membreMember.displayName, iconeURL: membreUser.displayAvatarURL()})
       .setFooter({ text: config.embed_footer });
 
     if (config.embed_image) embed.setImage(config.embed_image);
